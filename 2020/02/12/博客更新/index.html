@@ -320,23 +320,29 @@
   
 
   
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
-<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: "http://yoursite.com/2020/02/12/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0/",
-  owner: 'icecolai',
-  repo: 'comment',
-  oauth: {
-    client_id: '070e6f737af76436350f',
-    client_secret: 'be95803f478135dab339d46c8e6530e2ea155e31',
-  },
+
+
+
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+
+if(true){
+	var gitalk = new Gitalk({
+  	clientID: '070e6f737af76436350f',
+  	clientSecret: 'be95803f478135dab339d46c8e6530e2ea155e31',
+  	repo: 'comment',
+  	owner: 'icecolai',
+  	admin: ['icecolai'],
+  	id: 'Wed Feb 12 2020 10:21:51 GMT+0800',
+  	distractionFreeMode: 'true'
 })
-gitment.render('gitment-ctn')
+gitalk.render('gitalk-container') 
+}
 </script>
   
-
 
 
 
